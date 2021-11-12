@@ -16,7 +16,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class WizardController {
 
     @Autowired
-    @Qualifier("wizardRepository")
+    // @Qualifier("wizardRepository")
+    /* @Qualifier wird nicht benötigt, da es nur ein Repository gibt! */
+
     private WizardDao repository;
     //private WizardRepository repository = new WizardRepository();
 
